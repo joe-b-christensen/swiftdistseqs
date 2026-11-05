@@ -1,0 +1,527 @@
+{
+ "seed": 20261104,
+ "cases": [
+  {
+   "calc": "onegap",
+   "countends": "FALSE",
+   "cutoff": "0.3",
+   "output": "phylip",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0000.fasta",
+   "id": "fuzz_20261104_0000"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "false",
+   "cutoff": "0.5",
+   "output": "square",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0001.fasta",
+   "id": "fuzz_20261104_0001"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "false",
+   "cutoff": "1",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0002.fasta",
+   "id": "fuzz_20261104_0002"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "f",
+   "cutoff": "0.04",
+   "output": "square",
+   "processors": 3,
+   "fasta": "data/adversarial/case_0003.fasta",
+   "id": "fuzz_20261104_0003"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "f",
+   "cutoff": "0.5",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0004.fasta",
+   "id": "fuzz_20261104_0004"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "t",
+   "cutoff": "0.75",
+   "output": "square",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0005.fasta",
+   "id": "fuzz_20261104_0005"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "t",
+   "cutoff": "1.5",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0006.fasta",
+   "id": "fuzz_20261104_0006"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "true",
+   "cutoff": "0.25",
+   "output": "lt",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0007.fasta",
+   "id": "fuzz_20261104_0007"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "f",
+   "cutoff": "0.99",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0008.fasta",
+   "id": "fuzz_20261104_0008"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "true",
+   "cutoff": "0.6",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0009.fasta",
+   "id": "fuzz_20261104_0009"
+  },
+  {
+   "calc": "onegap",
+   "countends": "f",
+   "cutoff": "0.99",
+   "output": "square",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0010.fasta",
+   "id": "fuzz_20261104_0010"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "F",
+   "cutoff": "1.0",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0011.fasta",
+   "id": "fuzz_20261104_0011"
+  },
+  {
+   "calc": "onegap",
+   "countends": "false",
+   "cutoff": "0.333333",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0012.fasta",
+   "id": "fuzz_20261104_0012"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "true",
+   "cutoff": "0.02",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0013.fasta",
+   "id": "fuzz_20261104_0013"
+  },
+  {
+   "calc": "onegap",
+   "countends": "FALSE",
+   "cutoff": "0.2",
+   "output": "lt",
+   "processors": 4,
+   "fasta": "data/adversarial/case_0014.fasta",
+   "id": "fuzz_20261104_0014"
+  },
+  {
+   "calc": "onegap",
+   "countends": "true",
+   "cutoff": "0.9",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0015.fasta",
+   "id": "fuzz_20261104_0015"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "T",
+   "cutoff": "0.6",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0016.fasta",
+   "id": "fuzz_20261104_0016"
+  },
+  {
+   "calc": "onegap",
+   "countends": "F",
+   "cutoff": "0.05",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0017.fasta",
+   "id": "fuzz_20261104_0017"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "false",
+   "cutoff": "1.5",
+   "output": "lt",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0018.fasta",
+   "id": "fuzz_20261104_0018"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "TRUE",
+   "cutoff": "0.15",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0019.fasta",
+   "id": "fuzz_20261104_0019"
+  },
+  {
+   "calc": "onegap",
+   "countends": "T",
+   "cutoff": "0.2",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0020.fasta",
+   "id": "fuzz_20261104_0020"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "FALSE",
+   "cutoff": "0.1",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0021.fasta",
+   "id": "fuzz_20261104_0021"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "T",
+   "cutoff": "0.333333",
+   "output": "column",
+   "processors": 3,
+   "fasta": "data/adversarial/case_0022.fasta",
+   "id": "fuzz_20261104_0022"
+  },
+  {
+   "calc": "onegap",
+   "countends": "FALSE",
+   "cutoff": "0.1",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0023.fasta",
+   "id": "fuzz_20261104_0023"
+  },
+  {
+   "calc": "onegap",
+   "countends": "TRUE",
+   "cutoff": "0.1",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0024.fasta",
+   "id": "fuzz_20261104_0024"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "FALSE",
+   "cutoff": "0.333333",
+   "output": "lt",
+   "processors": 4,
+   "fasta": "data/adversarial/case_0025.fasta",
+   "id": "fuzz_20261104_0025"
+  },
+  {
+   "calc": "onegap",
+   "countends": "TRUE",
+   "cutoff": "1.5",
+   "output": "lt",
+   "processors": 3,
+   "fasta": "data/adversarial/case_0026.fasta",
+   "id": "fuzz_20261104_0026"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "true",
+   "cutoff": "0.04",
+   "output": "column",
+   "processors": 4,
+   "fasta": "data/adversarial/case_0027.fasta",
+   "id": "fuzz_20261104_0027"
+  },
+  {
+   "calc": "onegap",
+   "countends": "t",
+   "cutoff": "0.1",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0028.fasta",
+   "id": "fuzz_20261104_0028"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "T",
+   "cutoff": "0.1",
+   "output": "square",
+   "processors": 4,
+   "fasta": "data/adversarial/case_0029.fasta",
+   "id": "fuzz_20261104_0029"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "F",
+   "cutoff": "0.99",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0030.fasta",
+   "id": "fuzz_20261104_0030"
+  },
+  {
+   "calc": "onegap",
+   "countends": "T",
+   "cutoff": "0.05",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0031.fasta",
+   "id": "fuzz_20261104_0031"
+  },
+  {
+   "calc": "onegap",
+   "countends": "false",
+   "cutoff": "1",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0032.fasta",
+   "id": "fuzz_20261104_0032"
+  },
+  {
+   "calc": "onegap",
+   "countends": "TRUE",
+   "cutoff": "0.99",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0033.fasta",
+   "id": "fuzz_20261104_0033"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "f",
+   "cutoff": "0.15",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0034.fasta",
+   "id": "fuzz_20261104_0034"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "T",
+   "cutoff": "0.25",
+   "output": "column",
+   "processors": 3,
+   "fasta": "data/adversarial/case_0035.fasta",
+   "id": "fuzz_20261104_0035"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "false",
+   "cutoff": "0.15",
+   "output": "column",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0036.fasta",
+   "id": "fuzz_20261104_0036"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "T",
+   "cutoff": "0.0",
+   "output": "square",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0037.fasta",
+   "id": "fuzz_20261104_0037"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "f",
+   "cutoff": "0.333333",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/case_0038.fasta",
+   "id": "fuzz_20261104_0038"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "f",
+   "cutoff": "1.0",
+   "output": "lt",
+   "processors": 1,
+   "fasta": "data/adversarial/case_0039.fasta",
+   "id": "fuzz_20261104_0039"
+  },
+  {
+   "calc": "onegap",
+   "countends": "T",
+   "cutoff": "0.6",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_00.fasta",
+   "id": "fuzz_20261104_combo_00"
+  },
+  {
+   "calc": "onegap",
+   "countends": "T",
+   "cutoff": "0.10",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_01.fasta",
+   "id": "fuzz_20261104_combo_01"
+  },
+  {
+   "calc": "onegap",
+   "countends": "T",
+   "cutoff": "0.04",
+   "output": "square",
+   "processors": 1,
+   "fasta": "data/adversarial/combo_02.fasta",
+   "id": "fuzz_20261104_combo_02"
+  },
+  {
+   "calc": "onegap",
+   "countends": "F",
+   "cutoff": "0.0",
+   "output": "column",
+   "processors": 4,
+   "fasta": "data/adversarial/combo_03.fasta",
+   "id": "fuzz_20261104_combo_03"
+  },
+  {
+   "calc": "onegap",
+   "countends": "F",
+   "cutoff": "0",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_04.fasta",
+   "id": "fuzz_20261104_combo_04"
+  },
+  {
+   "calc": "onegap",
+   "countends": "F",
+   "cutoff": "0.6",
+   "output": "square",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_05.fasta",
+   "id": "fuzz_20261104_combo_05"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "T",
+   "cutoff": "0.03",
+   "output": "column",
+   "processors": 3,
+   "fasta": "data/adversarial/combo_06.fasta",
+   "id": "fuzz_20261104_combo_06"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "T",
+   "cutoff": "0.0",
+   "output": "lt",
+   "processors": 3,
+   "fasta": "data/adversarial/combo_07.fasta",
+   "id": "fuzz_20261104_combo_07"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "T",
+   "cutoff": "0.05",
+   "output": "square",
+   "processors": 1,
+   "fasta": "data/adversarial/combo_08.fasta",
+   "id": "fuzz_20261104_combo_08"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "F",
+   "cutoff": "0.05",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_09.fasta",
+   "id": "fuzz_20261104_combo_09"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "F",
+   "cutoff": "0.25",
+   "output": "lt",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_10.fasta",
+   "id": "fuzz_20261104_combo_10"
+  },
+  {
+   "calc": "eachgap",
+   "countends": "F",
+   "cutoff": "0.03",
+   "output": "square",
+   "processors": 3,
+   "fasta": "data/adversarial/combo_11.fasta",
+   "id": "fuzz_20261104_combo_11"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "T",
+   "cutoff": "0.333333",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_12.fasta",
+   "id": "fuzz_20261104_combo_12"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "T",
+   "cutoff": "0.25",
+   "output": "lt",
+   "processors": 3,
+   "fasta": "data/adversarial/combo_13.fasta",
+   "id": "fuzz_20261104_combo_13"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "T",
+   "cutoff": "0.3",
+   "output": "square",
+   "processors": 3,
+   "fasta": "data/adversarial/combo_14.fasta",
+   "id": "fuzz_20261104_combo_14"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "F",
+   "cutoff": "0.0808",
+   "output": "column",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_15.fasta",
+   "id": "fuzz_20261104_combo_15"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "F",
+   "cutoff": "0.04",
+   "output": "lt",
+   "processors": 3,
+   "fasta": "data/adversarial/combo_16.fasta",
+   "id": "fuzz_20261104_combo_16"
+  },
+  {
+   "calc": "nogaps",
+   "countends": "F",
+   "cutoff": "0.04",
+   "output": "square",
+   "processors": 2,
+   "fasta": "data/adversarial/combo_17.fasta",
+   "id": "fuzz_20261104_combo_17"
+  }
+ ]
+}

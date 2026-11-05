@@ -1,0 +1,80 @@
+[
+ {
+  "id": "dev_sop_uniq",
+  "role": "dev",
+  "fasta": "data/sets/dev_sop_uniq.fasta",
+  "calc": "onegap",
+  "countends": "T",
+  "cutoff": "0.03",
+  "output": "column",
+  "desc": "MiSeq SOP V4 unique sequences before pre.cluster, random 6000; SOP-style dist.seqs(cutoff=0.03)",
+  "bytes": 2511149,
+  "sha256": "c44bd331bbb952c129d3e0eee87c44d56d37706517bbb38c62f7889c6a9497c8",
+  "nseqs": 6000
+ },
+ {
+  "id": "held_sop_uniq",
+  "role": "held",
+  "fasta": "data/sets/held_sop_uniq.fasta",
+  "calc": "onegap",
+  "countends": "T",
+  "cutoff": "0.03",
+  "output": "column",
+  "desc": "MiSeq SOP V4 unique sequences, disjoint random 6000; dist.seqs(cutoff=0.03)",
+  "bytes": 2511297,
+  "sha256": "952bf7fe591ee909b18e3cfcd4590d961fee44fa672e7594fe17a19e6c234ab4",
+  "nseqs": 6000
+ },
+ {
+  "id": "dev_sop_final_lt",
+  "role": "dev",
+  "fasta": "data/sets/dev_sop_final.fasta",
+  "calc": "onegap",
+  "countends": "T",
+  "cutoff": "1.0",
+  "output": "lt",
+  "desc": "MiSeq SOP final 2929 sequences; the SOP's dist.seqs(output=lt) for clearcut",
+  "bytes": 1225831,
+  "sha256": "6ae8d4f8b51c039f203aaf335e4587c9e6040aa7f3cc850ae190ae654c703df6",
+  "nseqs": 2929
+ },
+ {
+  "id": "dev_silva_full",
+  "role": "dev",
+  "fasta": "data/sets/dev_silva_full.fasta",
+  "calc": "onegap",
+  "countends": "T",
+  "cutoff": "0.03",
+  "output": "column",
+  "desc": "SILVA SEED v138.2 full-length Bacteria, random 2000, filtered to 3735 columns; cutoff 0.03",
+  "bytes": 7509634,
+  "sha256": "4f495b3159232d67369774a288811f95d6f85e5b4cae7457ccc040b9fe597f30",
+  "nseqs": 2000
+ },
+ {
+  "id": "held_silva_full",
+  "role": "held",
+  "fasta": "data/sets/held_silva_full.fasta",
+  "calc": "nogaps",
+  "countends": "T",
+  "cutoff": "0.10",
+  "output": "column",
+  "desc": "SILVA SEED v138.2 full-length Bacteria, disjoint random 2000, filtered to 4067 columns; calc=nogaps, cutoff 0.10",
+  "bytes": 8173625,
+  "sha256": "8bc6d93caf463e3c91064c62a8abbf92856d2622384bc3a54c0d9b3615928eda",
+  "nseqs": 2000
+ },
+ {
+  "id": "held_silva_v4_lt",
+  "role": "held",
+  "fasta": "data/sets/held_silva_v4.fasta",
+  "calc": "eachgap",
+  "countends": "F",
+  "cutoff": "1.0",
+  "output": "lt",
+  "desc": "SILVA SEED v138.2 V4 region (pcr.seqs 11894-25319), Bacteria, random 2500, filtered to 560 columns; calc=eachgap, countends=F, output=lt",
+  "bytes": 1449537,
+  "sha256": "ae0bdd0e7a4c4bd9202ab561e757dea93aee861b855fa1fc67ddf265d6068dc0",
+  "nseqs": 2500
+ }
+]

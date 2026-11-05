@@ -1,0 +1,8 @@
+ref/mothur_src/
+ref/bin/mothur
+ref/bin/uchime
+solver/bin/
+application/work/
+/logs/
+/results/
+__pycache__/

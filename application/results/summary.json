@@ -1,0 +1,14 @@
+{
+ "n_sequences": 2929,
+ "n_pairs": 4288056,
+ "total_reads": 114945,
+ "swift_total_s": 0.7731586560003052,
+ "mothur_total_s": 74.0778798829997,
+ "all_identical": true,
+ "cluster_total_s": 7.210194047999721,
+ "median_pair_distance": 0.229249,
+ "mean_pair_distance": 0.20676638800470892,
+ "frac_pairs_le_0.03": 0.008021350467437925,
+ "nn_median": 0.00790514,
+ "when": "2026-11-04T23:17:45Z"
+}

@@ -1,0 +1,31 @@
+#!/bin/bash
+# Reference wrapper: runs mothur 1.48.6 dist.seqs and moves its output file to --out.
+# Usage: distseqs --fasta IN --out OUT [--calc C] [--countends T|F] [--cutoff X] [--output column|lt|square] [--processors P]
+# Exit status: mothur's exit status. If mothur writes no distance file, OUT is not created.
+set -u
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+MOTHUR="${MOTHUR_BIN:-$HERE/mothur}"
+calc=onegap; countends=T; cutoff=1.0; output=column; processors=1; fasta=""; out=""
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --fasta) fasta="$2"; shift 2;; --out) out="$2"; shift 2;;
+    --calc) calc="$2"; shift 2;; --countends) countends="$2"; shift 2;;
+    --cutoff) cutoff="$2"; shift 2;; --output) output="$2"; shift 2;;
+    --processors) processors="$2"; shift 2;;
+    *) echo "unknown option $1" >&2; exit 64;;
+  esac
+done
+[ -n "$fasta" ] && [ -n "$out" ] || { echo "need --fasta and --out" >&2; exit 64; }
+absin="$(cd "$(dirname "$fasta")" && pwd)/$(basename "$fasta")"
+tmp="$(mktemp -d "${TMPDIR:-/tmp}/refds.XXXXXX")"
+trap 'rm -rf "$tmp"' EXIT
+ln -s "$absin" "$tmp/in.fasta"
+( cd "$tmp" && "$MOTHUR" "#dist.seqs(fasta=in.fasta, calc=$calc, countends=$countends, cutoff=$cutoff, output=$output, processors=$processors)" > mothur.stdout 2>&1 )
+rc=$?
+case "$output" in
+  lt|phylip) f="$tmp/in.phylip.dist";; square) f="$tmp/in.square.dist";; *) f="$tmp/in.dist";;
+esac
+rm -f "$out"
+[ -f "$f" ] && mv "$f" "$out"
+if [ -n "${DISTSEQS_KEEP_LOG:-}" ]; then cp "$tmp/mothur.stdout" "$DISTSEQS_KEEP_LOG"; fi
+exit $rc

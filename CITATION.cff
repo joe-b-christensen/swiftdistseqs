@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use swiftdistseqs, please cite it as below, and also cite mothur, whose behaviour it reproduces."
+title: "swiftdistseqs: a byte-identical drop-in replacement for mothur dist.seqs"
+type: software
+version: 1.0.0
+date-released: 2026-11-05
+license: GPL-3.0-only
+repository-code: "https://github.com/joe-b-christensen/swiftdistseqs"
+authors:
+  - family-names: Christensen
+    given-names: Joe
+    orcid: "https://orcid.org/0009-0007-0908-1299"
+    email: joechristensen@clin.au.dk
+    affiliation: "Translational Neuropsychiatry Unit (TNU), Department of Clinical Medicine, Aarhus University, Denmark"
+keywords:
+  - mothur
+  - dist.seqs
+  - 16S rRNA
+  - OTU clustering
+  - performance
+abstract: >-
+  swiftdistseqs writes mothur 1.48.6 dist.seqs distance files for aligned DNA, byte for byte, at any thread count. On three
+  held-out data sets it was 92-fold faster than mothur at one thread on an AVX-512 machine, and 54-fold faster with its AVX2
+  code path.
+references:
+  - type: article
+    title: "Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities"
+    authors:
+      - family-names: Schloss
+        given-names: Patrick D.
+      - name: "et al."
+    journal: Applied and Environmental Microbiology
+    year: 2009
+    volume: 75
+    start: 7537
+    end: 7541
+    doi: "10.1128/AEM.01541-09"

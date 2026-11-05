@@ -1,0 +1,28 @@
+diff --git a/Makefile b/Makefile
+index 5b095d62..d2921b69 100644
+--- a/Makefile
++++ b/Makefile
+@@ -37,8 +37,8 @@ GSL_LIBRARY_DIR ?= "\"Enter_your_GSL_library_path_here\""
+ GSL_INCLUDE_DIR ?= "\"Enter_your_GSL_include_path_here\""
+ MOTHUR_FILES="\"Enter_your_default_path_here\""
+ MOTHUR_TOOLS="\"Enter_your_mothur_tools_path_here\""
+-VERSION = "\"1.48.5\""
+-RELEASE_DATE = "\"1/13/26\""
++VERSION = "\"1.48.6\""
++RELEASE_DATE = "\"7/29/26\""
+ 
+ 
+ # Set a static logfile name
+@@ -105,10 +105,10 @@ endif
+ 
+ 	VPATH=source/calculators:source/chimera:source/classifier:source/clearcut:source/commands:source/communitytype:source/datastructures:source/engines:source/metastats:source/read:source/svm:source/
+     skipUchime := source/uchime_src/
+-    subdirs :=  $(sort $(dir $(filter-out  $(skipUchime), $(wildcard source/*/))))
++    subdirs :=  $(sort $(dir $(filter-out  $(skipUchime), $(wildcard source/*/)))) source/
+     subDirIncludes = $(patsubst %, -I %, $(subdirs))
+     subDirLinking =  $(patsubst %, -L%, $(subdirs))
+-    CXXFLAGS += -I. $(subDirIncludes)
++    CXXFLAGS += -I. -Isource $(subDirIncludes)
+     LDFLAGS += $(subDirLinking)
+ 
+ 		OBJECTS=$(patsubst %.cpp,%.o,$(wildcard $(addsuffix *.cpp,$(subdirs))))
